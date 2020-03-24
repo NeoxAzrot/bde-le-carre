@@ -775,6 +775,9 @@ var pJS = function(tag_id, params){
 
   };
 
+  var easter_egg_done = false;
+  var easter_egg_animation = $("#easter-egg-container").html();
+  $("#easter-egg").remove();
 
   pJS.fn.modes.removeParticles = function(nb){
 
@@ -785,7 +788,15 @@ var pJS = function(tag_id, params){
 
     // TODO: Easter egg
 
-    if(pJS.particles.array.length == 0) {
+    if(pJS.particles.array.length == 0 && !easter_egg_done) {
+      easter_egg_done = true;
+
+      $("#easter-egg-container").css("display", "block");
+      $("#particles-js").css("display", "none");
+      jQuery('#easter-egg-container').append(easter_egg_animation);
+
+      animationEgg();
+
       console.log("Easter egg !");
     }
 
