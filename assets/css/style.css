@@ -2,13 +2,88 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100vh;
+	background: #1e1e1d;
+	overflow: hidden;
 }
 
 #particles-js {
 	height: 100%;
-	background: #1e1e1d;
+	display: block;
 }
 
 .easter-egg {
 	display: none;
+}
+
+h1.ml8 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	font-weight: 900;
+	font-size: 4.5em;
+	color: #eeeae3;
+	width: 4em;
+	height: 4em;
+	font-family: 'Chonburi', cursive;
+	font-style: italic;
+}
+
+.ml8 .letters-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	height: 1em;
+}
+
+.ml8 .letters {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	line-height: 0.7em;
+	right: -0.17em;
+	top: -0.3em;
+}
+
+.ml8 .bang {
+	font-size: 1.4em;
+	top: auto;
+	left: -0.06em;
+}
+
+.ml8 .circle {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+}
+
+.ml8 .circle-white {
+	width: 5em;
+	height: 5em;
+	border: 2px dashed white;
+	/*border-radius: 2em;*/
+}
+
+.ml8 .circle-dark {
+	width: 4.2em;
+	height: 4.2em;
+	background-color: #EECB28;
+	/*border-radius: 3em;*/
+	z-index: 1;
+}
+
+.ml8 .circle-dark-dashed {
+	/*border-radius: 2.4em;*/
+	background-color: transparent;
+	border: 2px dashed #EECB28;
+	width: 4.3em;
+	height: 4.3em;
 }
